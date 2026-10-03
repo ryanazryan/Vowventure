@@ -694,3 +694,499 @@ button {
     display: none;
   }
 }
+
+.wedding-page {
+  background: var(--ivory);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.wedding-shell {
+  margin: 0 auto;
+  max-width: 76rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.wedding-nav {
+  border-bottom: 1px solid rgba(59, 49, 42, 0.1);
+  padding: 1.35rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.wedding-back-link {
+  align-items: center;
+  color: var(--muted);
+  display: inline-flex;
+  font-size: 0.7rem;
+  font-weight: 700;
+  gap: 0.45rem;
+  transition: color 180ms ease;
+}
+
+.wedding-back-link:hover {
+  color: var(--charcoal);
+}
+
+.wedding-back-link:focus-visible,
+.wedding-enter-card a:focus-visible,
+.wedding-hero a:focus-visible {
+  outline: 3px solid rgba(201, 134, 121, 0.55);
+  outline-offset: 4px;
+}
+
+.wedding-hero {
+  background: #f5f0e8;
+  min-height: 42rem;
+  overflow: hidden;
+  padding: 7rem 0 6rem;
+  position: relative;
+}
+
+.wedding-hero-orb {
+  border: 1px solid rgba(201, 168, 106, 0.28);
+  border-radius: 50%;
+  height: 30rem;
+  position: absolute;
+  width: 30rem;
+}
+
+.wedding-hero-orb-left {
+  left: -18rem;
+  top: -16rem;
+}
+
+.wedding-hero-orb-right {
+  bottom: -21rem;
+  right: -13rem;
+}
+
+.wedding-detail-pill {
+  background: rgba(255, 253, 250, 0.72);
+  border: 1px solid rgba(59, 49, 42, 0.11);
+  border-radius: 999px;
+  padding: 0.7rem 0.95rem;
+}
+
+.wedding-hero-art {
+  background: linear-gradient(145deg, #efe5db, #ebd6d1 57%, #e4c7c1);
+  border: 1px solid rgba(255, 253, 249, 0.8);
+  border-radius: 1.25rem;
+  box-shadow: 0 24px 55px rgba(92, 69, 58, 0.13);
+  height: 31rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.wedding-hero-art::before {
+  border: 1px solid rgba(255, 253, 249, 0.55);
+  border-radius: 50%;
+  content: "";
+  height: 29rem;
+  left: -11rem;
+  position: absolute;
+  top: -15rem;
+  width: 29rem;
+}
+
+.wedding-hero-art::after {
+  background: rgba(165, 119, 112, 0.2);
+  border-radius: 50%;
+  bottom: -9rem;
+  content: "";
+  height: 21rem;
+  position: absolute;
+  right: -5rem;
+  width: 21rem;
+}
+
+.wedding-art-sun {
+  background: rgba(255, 250, 237, 0.58);
+  border-radius: 50%;
+  height: 10rem;
+  position: absolute;
+  right: 3.8rem;
+  top: 2.6rem;
+  width: 10rem;
+}
+
+.wedding-art-arch {
+  border: 1rem solid rgba(255, 250, 235, 0.8);
+  border-bottom: 0;
+  border-radius: 10rem 10rem 0 0;
+  bottom: 6.2rem;
+  height: 17rem;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 21rem;
+  z-index: 2;
+}
+
+.wedding-art-arch > div {
+  background: rgba(255, 249, 237, 0.24);
+  border-radius: 8rem 8rem 0 0;
+  bottom: 0;
+  left: 1rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.wedding-art-couple {
+  bottom: 7rem;
+  display: flex;
+  gap: 1.2rem;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 4;
+}
+
+.wedding-art-person {
+  height: 6rem;
+  position: relative;
+  width: 3.2rem;
+}
+
+.wedding-art-person i {
+  background: #9a6d5e;
+  border-radius: 50%;
+  display: block;
+  height: 1.4rem;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  width: 1.4rem;
+  z-index: 2;
+}
+
+.wedding-art-person b {
+  background: #6d4c46;
+  border-radius: 1.5rem 1.5rem 0.5rem 0.5rem;
+  bottom: 0;
+  display: block;
+  height: 4.4rem;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 2.8rem;
+}
+
+.wedding-art-person-two i {
+  background: #a87868;
+}
+
+.wedding-art-person-two b {
+  background: #fff9ef;
+  border-radius: 1.8rem 1.8rem 0.5rem 0.5rem;
+  width: 3.25rem;
+}
+
+.wedding-art-branch {
+  color: rgba(255, 250, 235, 0.92);
+  font-family: Georgia, serif;
+  font-size: 2.5rem;
+  position: absolute;
+  z-index: 3;
+}
+
+.wedding-art-branch-left {
+  left: 2.3rem;
+  top: 8.3rem;
+  transform: rotate(-25deg);
+}
+
+.wedding-art-branch-right {
+  bottom: 9.3rem;
+  right: 2.2rem;
+  transform: rotate(22deg);
+}
+
+.wedding-art-caption {
+  bottom: 1.35rem;
+  left: 1.4rem;
+  position: absolute;
+  z-index: 5;
+}
+
+.wedding-art-caption span,
+.wedding-art-caption strong {
+  display: block;
+}
+
+.wedding-art-caption span {
+  color: #806f65;
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.wedding-art-caption strong {
+  color: #403a35;
+  font-family: Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  margin-top: 0.25rem;
+}
+
+.wedding-status-wrap {
+  margin-top: -2.5rem;
+  position: relative;
+  z-index: 5;
+}
+
+.wedding-status-card {
+  align-items: center;
+  background: rgba(255, 253, 250, 0.94);
+  border: 1px solid rgba(59, 49, 42, 0.12);
+  border-radius: 1rem;
+  box-shadow: 0 16px 34px rgba(89, 65, 54, 0.08);
+  display: flex;
+  gap: 1rem;
+  padding: 1.35rem 1.5rem;
+}
+
+.wedding-status-icon {
+  align-items: center;
+  background: var(--blush);
+  border-radius: 50%;
+  color: var(--rose);
+  display: flex;
+  flex: 0 0 auto;
+  height: 2.8rem;
+  justify-content: center;
+  width: 2.8rem;
+}
+
+.wedding-status-dot {
+  background: #d8cabc;
+  border-radius: 50%;
+  height: 0.6rem;
+  margin-left: auto;
+  width: 0.6rem;
+}
+
+.wedding-status-dot-upcoming {
+  background: var(--champagne);
+  box-shadow: 0 0 0 5px rgba(201, 168, 106, 0.14);
+}
+
+.wedding-status-dot-live {
+  background: #75a575;
+  box-shadow: 0 0 0 5px rgba(117, 165, 117, 0.14);
+}
+
+.wedding-section {
+  padding: 7rem 0;
+}
+
+.wedding-details-section {
+  padding-bottom: 5rem;
+}
+
+.wedding-guests-section {
+  padding-top: 3rem;
+}
+
+.wedding-guests-card,
+.wedding-enter-card {
+  background: #ead8d1;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.wedding-guests-card {
+  min-height: 20rem;
+  padding: 3.5rem;
+}
+
+.wedding-guests-card::before,
+.wedding-enter-card::before,
+.wedding-enter-card::after {
+  border: 1px solid rgba(255, 253, 249, 0.5);
+  border-radius: 50%;
+  content: "";
+  height: 25rem;
+  position: absolute;
+  width: 25rem;
+}
+
+.wedding-guests-card::before {
+  bottom: -17rem;
+  right: -7rem;
+}
+
+.wedding-guests-art {
+  height: 19rem;
+  position: absolute;
+  right: 3rem;
+  top: 0.5rem;
+  width: 19rem;
+}
+
+.wedding-guests-ring {
+  border: 1px solid rgba(201, 168, 106, 0.7);
+  border-radius: 50%;
+  height: 15rem;
+  left: 2rem;
+  position: absolute;
+  top: 1rem;
+  transform: rotate(30deg);
+  width: 15rem;
+}
+
+.wedding-guests-art span {
+  color: rgba(255, 249, 237, 0.9);
+  font-family: Georgia, serif;
+  font-size: 2.5rem;
+  position: absolute;
+}
+
+.wedding-guests-art span:nth-of-type(1) {
+  left: 1.4rem;
+  top: 5rem;
+}
+
+.wedding-guests-art span:nth-of-type(2) {
+  right: 1rem;
+  top: 2.3rem;
+}
+
+.wedding-guests-art span:nth-of-type(3) {
+  bottom: 0.2rem;
+  right: 4rem;
+}
+
+.wedding-enter-card {
+  padding: 6rem 2rem;
+}
+
+.wedding-enter-card::before {
+  left: -12rem;
+  top: -15rem;
+}
+
+.wedding-enter-card::after {
+  bottom: -16rem;
+  right: -9rem;
+}
+
+.celebration-page {
+  min-height: 100vh;
+}
+
+.celebration-placeholder {
+  align-items: center;
+  display: flex;
+  min-height: calc(100vh - 5.5rem);
+  overflow: hidden;
+  padding: 7rem 2rem;
+  position: relative;
+}
+
+.celebration-orbit {
+  border: 1px solid rgba(201, 168, 106, 0.3);
+  border-radius: 50%;
+  height: 35rem;
+  position: absolute;
+  width: 35rem;
+}
+
+.celebration-orbit-one {
+  left: -18rem;
+  top: -12rem;
+}
+
+.celebration-orbit-two {
+  bottom: -20rem;
+  right: -12rem;
+  transform: rotate(35deg);
+}
+
+@media (max-width: 767px) {
+  .wedding-shell {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .wedding-nav {
+    padding: 1.1rem 0;
+  }
+
+  .wedding-back-link {
+    font-size: 0;
+  }
+
+  .wedding-back-link svg {
+    height: 1rem;
+    width: 1rem;
+  }
+
+  .wedding-hero {
+    min-height: 0;
+    padding: 5rem 0 4rem;
+  }
+
+  .wedding-hero-art {
+    height: 24rem;
+  }
+
+  .wedding-art-arch {
+    bottom: 4.8rem;
+    height: 12.5rem;
+    width: 15.5rem;
+  }
+
+  .wedding-art-sun {
+    height: 7rem;
+    right: 2.5rem;
+    top: 2rem;
+    width: 7rem;
+  }
+
+  .wedding-art-couple {
+    bottom: 5.5rem;
+  }
+
+  .wedding-art-caption {
+    bottom: 1rem;
+    left: 1rem;
+  }
+
+  .wedding-section {
+    padding: 5rem 0;
+  }
+
+  .wedding-status-card {
+    padding: 1.1rem;
+  }
+
+  .wedding-status-icon {
+    height: 2.3rem;
+    width: 2.3rem;
+  }
+
+  .wedding-guests-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .wedding-guests-art {
+    opacity: 0.65;
+    right: -5rem;
+    top: 7rem;
+    transform: scale(0.78);
+  }
+
+  .wedding-enter-card {
+    padding: 4.5rem 1.25rem;
+  }
+
+  .celebration-placeholder {
+    min-height: calc(100vh - 4.5rem);
+    padding: 5rem 1.25rem;
+  }
+}

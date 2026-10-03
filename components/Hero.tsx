@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ArrowRight, ArrowUpRight, Play, Sparkle } from "@/components/Icons";
 
 export function Hero() {
@@ -21,12 +22,12 @@ export function Hero() {
               <a className="button-primary" href="#create">
                 Create Your Wedding <ArrowUpRight size={15} />
               </a>
-              <a className="button-secondary min-h-0 border-0 px-1 py-2" href="#attend">
+              <Link className="button-secondary min-h-0 border-0 px-1 py-2" href="/wedding/ryan-and-kirei">
                 <span className="flex h-8 w-8 items-center justify-center rounded-full border border-[#3b312a22] bg-[#fffdfa]">
                   <Play size={12} />
                 </span>
                 Attend a Wedding
-              </a>
+              </Link>
             </div>
             <div className="mt-12 flex items-center gap-3 text-xs text-[#8c8279]">
               <div className="flex -space-x-2" aria-hidden="true">
@@ -53,7 +54,7 @@ function WeddingScene() {
       </div>
       <div className="hero-scene">
         <div className="scene-topbar">
-          <span>Saturday, June 22</span>
+          <span>Your celebration</span>
           <span className="scene-live">Live venue</span>
         </div>
         <div className="scene-stage">
@@ -77,12 +78,12 @@ function WeddingScene() {
           <div className="scene-ground" />
         </div>
         <div className="guest-pill guest-pill-top">
-          <span className="guest-avatar">64</span>
-          <span className="guest-name">guests here<span className="guest-detail">making memories together</span></span>
+          <span className="guest-avatar">✦</span>
+          <span className="guest-name">guests gathering<span className="guest-detail">making memories together</span></span>
         </div>
         <div className="guest-pill guest-pill-bottom">
           <span className="guest-avatar">♡</span>
-          <span className="guest-name">Ryan &amp; Kirei<span className="guest-detail">the celebration is live</span></span>
+          <span className="guest-name">the happy couple<span className="guest-detail">the celebration is live</span></span>
           <ArrowRight size={14} />
         </div>
       </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { ArrowUpRight } from "@/components/Icons";
 
@@ -29,9 +30,9 @@ export function Navbar() {
           </div>
 
           <div className="hidden items-center gap-5 md:flex">
-            <a className="nav-link text-[0.72rem] font-semibold text-[#77716b] transition-colors hover:text-[#292724]" href="#attend">
+            <Link className="nav-link text-[0.72rem] font-semibold text-[#77716b] transition-colors hover:text-[#292724]" href="/wedding/ryan-and-kirei">
               Attend a Wedding
-            </a>
+            </Link>
             <a className="button-primary min-h-0 px-4 py-2.5 text-[0.7rem]" href="#create">
               Create a Wedding <ArrowUpRight size={14} />
             </a>
@@ -61,9 +62,9 @@ export function Navbar() {
                   {link.label}
                 </a>
               ))}
-              <a className="mobile-nav-link rounded-lg px-3 py-3 text-sm font-semibold text-[#77716b] hover:bg-[#fffdfa] hover:text-[#292724]" href="#attend" onClick={() => setMenuOpen(false)}>
+              <Link className="mobile-nav-link rounded-lg px-3 py-3 text-sm font-semibold text-[#77716b] hover:bg-[#fffdfa] hover:text-[#292724]" href="/wedding/ryan-and-kirei" onClick={() => setMenuOpen(false)}>
                 Attend a Wedding
-              </a>
+              </Link>
               <a className="button-primary mt-3" href="#create" onClick={() => setMenuOpen(false)}>
                 Create a Wedding <ArrowUpRight size={14} />
               </a>
